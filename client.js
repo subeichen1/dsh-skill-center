@@ -111,8 +111,8 @@ window.__ModuleLoader__.load({
       copyHint: { zh: '会复制原目录及其资源文件，并写入新的名称；目标目录已存在时不会覆盖。', en: 'Copies the whole skill directory, including resources, under a new name. Existing targets are never overwritten.' },
       deleteHint: { zh: '仅删除当前工作区中被技能中心管理的目录。', en: 'Only removes this managed skill directory from the current workspace.' },
       p3note: {
-        zh: '支持编辑 SKILL.md、复制为模板与删除；文件写入后下一轮对话生效。',
-        en: 'Edit SKILL.md, duplicate as template, or delete a managed skill; changes apply on the next turn.',
+        zh: '支持编辑 SKILL.md、复制为模板与删除；文件写入后下一轮对话生效。新增技能会自动补齐中英文描述。',
+        en: 'Edit SKILL.md, duplicate as template, or delete a managed skill; changes apply on the next turn. New skills automatically get bilingual descriptions.',
       },
       warnings: { zh: '扫描提示', en: 'Scan notices' },
       p0note: {
