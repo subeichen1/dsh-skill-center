@@ -1,6 +1,6 @@
 {
   "name": "dsh-skill-center",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "type": "module",
   "description": "查看、分组、启用或禁用、编辑、复制和删除非官方内置技能，按项目级与用户级分别管理，并估算技能目录常驻上下文 token。",

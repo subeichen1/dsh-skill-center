@@ -101,6 +101,9 @@ test('applySkillState writes and removes explicit project state', async () => {
 
 test('project scope resolves to the workspace state file, global to DSH_HOME', () => {
   const environment = { projectRoot: 'C:\\work\\demo', dshHome: 'C:\\Users\\me\\.dsh' }
-  assert.equal(resolveStateFileForScope('project', environment), 'C:\\work\\demo\\.dsh\\skill-center.json')
-  assert.equal(resolveStateFileForScope('global', environment), 'C:\\Users\\me\\.dsh\\skill-center\\state.json')
+  assert.equal(resolveStateFileForScope('project', environment), join('C:\\work\\demo', '.dsh', 'skill-center.json'))
+  assert.equal(
+    resolveStateFileForScope('global', environment),
+    join('C:\\Users\\me\\.dsh', 'skill-center', 'state.json'),
+  )
 })

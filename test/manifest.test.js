@@ -72,7 +72,7 @@ test('bilingual READMEs and publishing guide exist and describe the settings ent
   assert.match(readme, /设置 → 技能中心/)
   assert.match(readmeEn, /Settings → Skill Center/)
   assert.match(publishing, /awesome-dsh-plugin/)
-  assert.match(publishing, /github:<YOUR_GITHUB_USER>\/dsh-skill-center/)
+  assert.match(publishing, /github:[A-Za-z0-9_.-]+\/dsh-skill-center/)
 })
 
 test('client registers a sidebar entry and its matching main panel', async () => {
