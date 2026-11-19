@@ -1,4 +1,4 @@
-﻿# Publishing dsh-skill-center
+# Publishing dsh-skill-center
 
 This document describes the expected GitHub release flow and the upstream listing
 request for `awesome-dsh-plugin`. The plugin itself is a plain
@@ -29,21 +29,21 @@ Recommended repository settings:
 ## 2. Tag a release
 
 ```bash
-git tag v0.1.0
-git push origin v0.1.0
+git tag v0.1.1
+git push origin v0.1.1
 ```
 
 Create a GitHub Release from the tag. A minimal release note:
 
 ```markdown
-## v0.1.0
+## v0.1.1
 
 - Per-project / per-user switches for non-bundled DSH skills
 - Read-time defaults: project skills on, user skills off
 - Three-state overrides: inherit / on / off
 - Token estimate for the resident skill catalog
 - Hot invalidation on the next agent pre-step
-- Settings UI with workspace, source and status filters
+- Settings and sidebar UI with workspace, source and status filters
 - SKILL.md edit, duplicate-as-template and delete actions
 - Automatic bilingual descriptions for newly added skills
 - Agent-scope self-check and /name fallback notice
