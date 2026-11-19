@@ -1,0 +1,7 @@
+node_modules/
+.dsh/
+.dsh-pilot/
+out/
+*.log
+*.tmp
+.DS_Store

@@ -1,0 +1,78 @@
+{
+  "name": "dsh-skill-center",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "查看、分组、启用或禁用、编辑、复制和删除非官方内置技能，按项目级与用户级分别管理，并估算技能目录常驻上下文 token。",
+  "license": "MIT",
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./index.js": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "lib",
+    "locale",
+    "docs",
+    "icon.svg",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check index.js && node --check client.js"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-home-paths": ">=0.2.0-rc.1"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh-home-paths": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.2.0-rc.1"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "requires": [
+      "ctx.effect",
+      "ctx.get",
+      "ctx.logger.warn",
+      "ctx.on",
+      "ctx.skills.list",
+      "ctx.skills.registerProvider",
+      "ctx.skills.snapshot",
+      "ctx.webServer.register",
+      "ctx.workspaceRegistry.list"
+    ],
+    "optional": [
+      "ctx.logger",
+      "ctx.workingDirectory.ensure",
+      "ctx.translator.resolve",
+      "ctx.translator.translate",
+      "ctx.llm.stream",
+      "ctx.agentDefaultModel.currentSelection"
+    ],
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-slots"
+      ]
+    }
+  }
+}

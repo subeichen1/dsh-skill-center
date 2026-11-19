@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "title": "Skill Center",
+    "description": "View, group, enable or disable, edit, duplicate and delete non-bundled skills by project and user scope, with a context-token estimate for the resident catalog."
+  },
+  "section": {
+    "title": "Skill Center",
+    "subtitle": "View, group, enable or disable, edit, duplicate and delete non-bundled skills by project and user scope, with a context-token estimate for the resident catalog."
+  }
+}
